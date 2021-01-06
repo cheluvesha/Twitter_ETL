@@ -8,14 +8,14 @@
 
 ## Dependencies required:
 
-Spark-Core - 3.0.1
-Spark-Sql - 3.0.1
-Spark-Streaming - 3.0.1
-scalatest - 3.0.8
-Spark-streaming-kafka-0-10 - 3.0.1
-Spark-sql-kafka-0-10 - 3.0.1
-spark-cassandra-connector - 3.0.0
-joda-time - 2.3
+Spark-Core - 3.0.1,
+Spark-Sql - 3.0.1,
+Spark-Streaming - 3.0.1,
+scalatest - 3.0.8,
+Spark-streaming-kafka-0-10 - 3.0.1,
+Spark-sql-kafka-0-10 - 3.0.1,
+spark-cassandra-connector - 3.0.0, 
+joda-time - 2.3.
 
 ## Plugins Used
 
