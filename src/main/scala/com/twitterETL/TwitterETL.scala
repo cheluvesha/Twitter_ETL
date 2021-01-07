@@ -143,11 +143,11 @@ object TwitterETL {
     (words: String) => {
       var removeText: String = null
       if (words != null) {
+        // Clean hashtags, emoji's, hyperlinks, and twitter tags. Replace @mention with empty string
         removeText = words
           .replaceAll("""(\b\w*RT)|[^a-zA-Z0-9\s\.\,\!,\@]""", "")
           .replaceAll("(http\\S+)", "")
           .replaceAll("(@\\w+)", "")
-          .replaceAll("(Bla)", "")
           .replaceAll("\\s{2,}", " ")
       } else {
         removeText = "null"
