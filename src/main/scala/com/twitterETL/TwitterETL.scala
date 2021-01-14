@@ -85,7 +85,7 @@ object TwitterETL {
   }
 
   /** *
-    * Writes DataFrame into MYSQL table
+    * Writes DataFrame into cassandra table
     * @param hashTagDF DataFrame
     */
   def writeDataFrame(
