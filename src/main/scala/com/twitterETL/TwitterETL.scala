@@ -14,7 +14,7 @@ object TwitterETL {
   sparkSession.udf.register("removeWords", remove)
 
   /** *
-    * Reads Data From Kafka Topic
+    * Reads Data From the Kafka Topic
     * @param broker String
     * @param topic  String
     * @return DataFrame
@@ -42,7 +42,7 @@ object TwitterETL {
     * @return StructType
     */
   def extractSchemaFromTwitterData(filePath: String): StructType = {
-    logger.info("Extracting Schema From Twitter Json File")
+    logger.info("Extracting Schema From the Twitter Json File")
     try {
       val twitterData = sparkSession.read
         .json(filePath)
@@ -85,7 +85,7 @@ object TwitterETL {
   }
 
   /** *
-    * Writes DataFrame into MYSQL table
+    * Writes DataFrame into cassandra table
     * @param hashTagDF DataFrame
     */
   def writeDataFrame(
